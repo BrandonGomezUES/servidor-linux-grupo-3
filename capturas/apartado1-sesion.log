@@ -1,0 +1,66 @@
+Script iniciado en 2026-11-02 23:45:04-06:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="206" LINES="49"]
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo whoami     ami  
+[sudo] contraseña para adminsys: 
+root
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ hostname  ca tl  
+[0;1;38:5:185mFailed to query product UUID, ignoring: Access denied[0m
+[0;1;38:5:185mFailed to query hardware serial, ignoring: Access denied[0m
+[0;94m Static hostname:[0m servidor-grupo3
+[0;94m       Icon name:[0m computer-vm
+[0;94m         Chassis:[0m vm 🖴
+[0;94m      Machine ID:[0m 4bdad2ed9c504de1b3085267fe140554
+[0;94m         Boot ID:[0m b534f0086dca4e48a7a12747ee525c73
+[0;94m  Virtualization:[0m kvm
+[0;94mOperating System:[0m ]8;;https://www.debian.org/\Debian GNU/Linux 13 (trixie)]8;;\    
+[0;94m          Kernel:[0m Linux 6.12.115+deb13.1-amd64
+[0;94m    Architecture:[0m x86-64
+[0;94m Hardware Vendor:[0m QEMU
+[0;94m  Hardware Model:[0m Standard PC _Q35 + ICH9, 2009_
+[0;94mFirmware Version:[0m Arch Linux 1.17.0-2-2
+[0;94m   Firmware Date:[0m Tue 2014-04-01
+[0;94m    Firmware Age:[0m [0;1;38:5:185m12y 7month 3d                   [0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo go roup  aa ddd    soporte  
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo groupadd web
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo useradd -m -s /bin/bash -G soporte tecnico
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo useradd -m -s /bin/bash -G web visitante
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo passwd tecnico
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo passwd visitante
+Nueva contraseña: 
+Vuelva a escribir la nueva contraseña: 
+passwd: contraseña actualizada correctamente
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ id
+uid=1001(adminsys) gid=1001(adminsys) grupos=1001(adminsys),27(sudo)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ su    id te    te  tecnico
+uid=1002(tecnico) gid=1004(tecnico) grupos=1004(tecnico),1002(soporte)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ id adminsys
+uid=1001(adminsys) gid=1001(adminsys) grupos=1001(adminsys),27(sudo)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ id visitante
+uid=1003(visitante) gid=1005(visitante) grupos=1005(visitante),1003(web)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ^C
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo mkdir -p /proyecto/{datos,web,scripts,capturas}
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo chgrp soporte /proyecto/datos
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo chgrp web /proyecto/web
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo chmod 2775 /proyecto/datos /proyecto/web
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto
+total 16
+drwxr-xr-x 2 adminsys adminsys 4096 nov  2 22:00 [0m[01;34mcapturas[0m
+drwxrwsr-x 2 adminsys soporte  4096 nov  2 22:00 [01;34mdatos[0m
+drwxr-xr-x 2 adminsys adminsys 4096 nov  2 21:54 [01;34mscripts[0m
+drwxrwsr-x 2 adminsys web      4096 nov  2 21:54 [01;34mweb[0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo touch /proyecto/datos/prueba.txt /proyecto/web/prueba.txt
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto/datos /proyecto/web
+/proyecto/datos:
+total 0
+-rw-r--r-- 1 root soporte 0 nov  2 23:53 prueba.txt
+
+/proyecto/web:
+total 0
+-rw-r--r-- 1 root web 0 nov  2 23:53 prueba.txt
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo rm /proyecto/datos/prueba.txt /proyecto/web/prueba.txt
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ exit
+exit
+
+Script terminado en 2026-11-02 23:53:57-06:00 [CÓDIGO_SALIDA_ORDEN="0"]
