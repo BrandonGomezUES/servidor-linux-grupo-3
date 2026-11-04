@@ -3,6 +3,90 @@
 Este repositorio contiene la solución e implementación del proyecto final para la asignatura *Introducción al Software Libre* (Ciclo II - 2026), de la Universidad de El Salvador, Facultad Multidisciplinaria de Occidente.
 
 ## 🛠️ Apartados del Proyecto Implementados
+### Parte 1: Preparación del Entorno Servidor
+
+**1.1 Administración básica del sistema**
+- Se asignó el nombre de host `servidor-grupo3`.
+- Se crearon los usuarios `adminsys`, `tecnico` y `visitante`, y los grupos `soporte` y `web`.
+- `adminsys` tiene privilegios de `sudo`, `tecnico` pertenece al grupo `soporte` y `visitante` al grupo `web`.
+
+```bash
+sudo hostnamectl set-hostname servidor-grupo3
+sudo groupadd soporte
+sudo groupadd web
+sudo useradd -m -s /bin/bash -G sudo adminsys
+sudo useradd -m -s /bin/bash -G soporte tecnico
+sudo useradd -m -s /bin/bash -G web visitante
+```
+
+* **Verificación:**
+  ```bash
+  hostnamectl
+  id adminsys; id tecnico; id visitante
+  ```
+
+**1.2 Estructura de directorios y permisos**
+Se creó la estructura en `/proyecto/` y se asignaron los grupos. Con el bit setgid (`2775`), los archivos nuevos heredan el grupo del directorio.
+
+```bash
+sudo mkdir -p /proyecto/{datos,web,scripts,capturas}
+sudo chgrp soporte /proyecto/datos
+sudo chgrp web /proyecto/web
+sudo chmod 2775 /proyecto/datos /proyecto/web
+ls -l /proyecto
+```
+
+---
+
+### Parte 2: Automatización y Monitoreo
+
+**2.1 Script de monitoreo del sistema**
+Se creó `/proyecto/scripts/reporte_sistema.sh` con permisos de ejecución. Muestra la fecha y hora, el nombre del host, los usuarios conectados, el espacio libre en disco, la RAM disponible y el número de contenedores Docker activos.
+
+```bash
+#!/bin/bash
+echo "===== Reporte del sistema ====="
+echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"
+echo "Host:                 $(hostname)"
+echo "Usuarios conectados:  $(who | wc -l)"
+echo "Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"
+echo "RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"
+if command -v docker >/dev/null 2>&1; then
+  echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"
+else
+  echo "Contenedores activos: 0 (Docker no instalado)"
+fi
+echo
+```
+
+```bash
+chmod +x /proyecto/scripts/reporte_sistema.sh
+/proyecto/scripts/reporte_sistema.sh
+```
+
+**2.2 Automatización con Cron**
+Se programó la ejecución cada 30 minutos y se guarda la salida en `/var/log/proyecto/reporte_sistema.log`.
+
+```bash
+sudo mkdir -p /var/log/proyecto
+sudo chown adminsys:adminsys /var/log/proyecto
+sudo systemctl enable --now cron
+crontab -e
+```
+Línea agregada al crontab de `adminsys`:
+```text
+*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1
+```
+
+* **Verificación de que el registro se actualiza:**
+  ```bash
+  crontab -l
+  systemctl status cron --no-pager
+  grep "Fecha y hora" /var/log/proyecto/reporte_sistema.log
+  ```
+  Los logs de las sesiones de estos apartados están en `capturas/` (`apartado1-sesion.log` y `apartado2-sesion.log`).
+
+---
 
 ### Parte 3: Control de Versiones (Git & GitHub)
 - Inicialización del repositorio Git local en el directorio /proyecto/.
