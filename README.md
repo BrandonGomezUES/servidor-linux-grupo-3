@@ -164,5 +164,59 @@ Para empaquetar de forma estática la aplicación web directamente dentro de una
   ```
 
 ---
+
+### Parte 7: Redes y Volúmenes Persistentes
+
+**7.1 Red personalizada (`red-proyecto`)**
+Se creó una red personalizada de tipo *bridge* para permitir la comunicación aislada entre contenedores mediante resolución de nombres DNS. Se ejecutó un contenedor Nginx asignado a dicha red exponiendo el puerto 8082.
+
+```bash
+docker network create red-proyecto
+docker run -d --name nginx-red --network red-proyecto -p 8082:80 nginx:latest
+```
+
+- **Verificación de red:**
+  ```bash
+  docker network inspect red-proyecto
+  ```
+
+**7.2 Volumen persistente (`volumen-web`)**
+Se creó un volumen persistente para asegurar la conservación de datos independientemente del ciclo de vida del contenedor, asociándolo al servicio en el puerto 8083.
+
+```bash
+docker volume create volumen-web
+docker run -d --name nginx-volumen -p 8083:80 -v volumen-web:/usr/share/nginx/html/ nginx:latest
+```
+
+- **Verificación del montaje:**
+  ```bash
+  docker inspect nginx-volumen
+  ```
+
+---
+
+### Parte 8: Pruebas y Verificación Final
+
+**8.1 Pruebas de conectividad en red**
+Se comprobó la resolución de nombres DNS interna y la conectividad entre contenedores de `red-proyecto` mediante un contenedor temporal de Alpine Linux.
+
+```bash
+docker run --rm -it --network red-proyecto alpine ping -c 4 nginx-red
+```
+
+**8.2 Verificación integral del sistema**
+Se confirmó el funcionamiento concurrente de todos los contenedores web del grupo en sus respectivos puertos (8080, 8081, 8082 y 8083) y la actualización constante de los registros del script de monitoreo en `cron`.
+
+```bash
+docker ps
+curl -I http://localhost:8080
+curl -I http://localhost:8081
+curl -I http://localhost:8082
+curl -I http://localhost:8083
+tail -n 15 /var/log/proyecto/reporte_sistema.log
+```
+
+---
+
 Desarrollado de forma equitativa por los integrantes del Grupo 3.
 
