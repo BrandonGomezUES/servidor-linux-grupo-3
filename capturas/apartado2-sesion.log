@@ -1,0 +1,258 @@
+Script iniciado en 2026-11-02 23:54:49-06:00 [TERM="xterm-kitty" TTY="/dev/pts/0" COLUMNS="206" LINES="49"]
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ exit    script -a ~/apartado2-sesion.log
+Script iniciado, el fichero de anotación de salida es '/home/adminsys/apartado2-sesion.log'.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ cat > /proyecto/scripts/reporte_sistema.sh <<'EOF'#!/bin/bashecho "===== Reporte del sistema ====="echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"<echo "===== Reporte del sistema ====="echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"echo "Host:                 $(hostname)"                                                                                echo "Usuarios conectados:  $(who | wc -l)"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ho | wc -l)"echo "Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"                                           echo "RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ee -h | awk '/^Mem:/ {print $7}')"if command -v docker >/dev/null 2>&1; then                                                                    echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ; then  echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"else                                                                    echo "Contenedores activos: 0 (Docker no instalado)"fiechoEOF]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (Docker no instalado)"fiechoEOFchmod +x /proyecto/scripts/reporte_sistema.sh                                                               ls -l /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$  -l /proyecto/scripts/reporte_sistema.sh/proyecto/scripts/reporte_sistema.sh                                          
+bash: !/bin/bashecho: event not found
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ rm -f /proyecto/scripts/reporte_sistema.sh
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto/scripts
+total 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh
+Error opening terminal: xterm-kitty.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nan /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ na /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ n /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ n /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nv /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvi /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvim /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvim
+bash: nvim: orden no encontrada
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ export TERM=xterm-256color
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47;95H(B[0;7m[ Nuevo fichero ](B[m[H(B[0;7m  GNU nano 8.4                                                                         /proyecto/scScript iniciado en 2026-11-02 23:55:02-06:00 [TERM="xterm-kitty" TTY="/dev/pts/1" COLUMNS="206" LINES="49"]
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ cat > /proyecto/scripts/reporte_sistema.sh <<'EOF'#!/bin/bashecho "===== Reporte del sistema ====="echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"<echo "===== Reporte del sistema ====="echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"echo "Host:                 $(hostname)"                                                                                echo "Usuarios conectados:  $(who | wc -l)"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ho | wc -l)"echo "Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"                                           echo "RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ee -h | awk '/^Mem:/ {print $7}')"if command -v docker >/dev/null 2>&1; then                                                                    echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ; then  echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"else                                                                    echo "Contenedores activos: 0 (Docker no instalado)"fiechoEOF]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (Docker no instalado)"fiechoEOFchmod +x /proyecto/scripts/reporte_sistema.sh                                                               ls -l /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$  -l /proyecto/scripts/reporte_sistema.sh/proyecto/scripts/reporte_sistema.sh                                          
+bash: !/bin/bashecho: event not found
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ rm -f /proyecto/scripts/reporte_sistema.sh
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto/scripts
+total 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh
+Error opening terminal: xterm-kitty.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nan /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ na /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ n /proyecto/scripts/reporte_sistema.sh ]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ n /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nv /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvi /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvim /proyecto/scripts/reporte_sistema.sh]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nvim
+bash: nvim: orden no encontrada
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ export TERM=xterm-256color
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh
+[?2004h[?1049h[22;0;0t[1;49r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[47;95H(B[0;7m[ Nuevo fichero ](B[m[H(B[0;7m  GNU nano 8.4                                                                         /proyecto/scripts/reporte_sistema.sh                                                                                   [1;205H(B[m[48d(B[0;7m^G(B[m Ayuda[48;18H(B[0;7m^O(B[m Guardar[35G(B[0;7m^F(B[m ripts/reporte_sistema.sh                                                                                   [1;205H(B[m[48d(B[0;7m^G(B[m Ayuda[48;18H(B[0;7m^O(B[m Guardar[35G(B[0;7m^F(B[m Buscar[48;52H(B[0;7m^K(B[m Cortar[48;69H(B[0;7m^T(B[m Ejecutar[86G(B[0;7m^C(B[m Ubicación     (B[0;7mM-U(B[m Deshacer     (B[0;7mM-A(B[m Poner marca  (B[0;7mM-](B[m A llave[154G(B[0;7mM-B(B[m Anterior     (B[0;7m◂(B[m Atrás[48;188H(B[0;7m^◂(B[m Palabra ant.[49d(B[0;7m^X(B[m Salir[49;18H(B[0;7m^R(B[m Leer fich.    (B[0;7m^\(B[m Reemplazar    (B[0;7m^U(B[m Pegar[49;69H(B[0;7m^J(B[m Justificar    (B[0;7m^/(B[m Ir a línea    (B[0;7mM-E(B[m Rehacer[120G(B[0;7mM-6(B[m Copiar[137G(B[0;7m^B(B[m Buscar atrás  (B[0;7mM-F(B[m Siguiente    (B[0;7m▸(B[m Adelante[188G(B[0;7m^▸(B[m Palabra sig.[2d[?12l[?25h[?25l[1;125H(B[0;7m*[47d(B[m[K[1;205H[2d[36m#!/bin/bash[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"===== Reporte del sistema ====="[4d[34mecho[39m(B[m (B[0;1m[33m"Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"[5d[34mecho[39m(B[m (B[0;1m[33m"Host:[17X[5;29H$(hostname)"[6d[34mecho[39m(B[m (B[0;1m[33m"Usuarios conectados:  $(who | wc -l)"[7d[34mecho[39m(B[m (B[0;1m[33m"Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"[8d[34mecho[39m(B[m (B[0;1m[33m"RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"[9d(B[0m[32mif[39m(B[m command(B[0;1m[35m -v[39m(B[m docker [32m>[39m(B[m/dev/null 2[32m>&[39m(B[m1[32m;[39m(B[m [32mthen[10;3H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"[11d(B[0m[32melse[12d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Contenedores activos: 0 (Docker no instalado)"[13d(B[0m[32mfi[14d(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[48;18H          [35G         [48;52H(B[0;7mM-D(B[m Formato DOS             [86G            [105G(B[0;7mA(B[m Añadir[35X[48;158HRespaldar fichero[K[49;2H(B[0;7mC(B[m Cancelar[18G[34X[49;52H(B[0;7mM-M(B[m Formato Mac[32X[49;105H(B[0;7mP(B[m Anteponer[14X[49;137H[17X[49;154H(B[0;7m^T(B[m Navegar[K[47d(B[0;7mEscribir al fichero: /proyecto/scripts/reporte_sistema.sh                                                                                                                                                     [47;58H(B[m[?12l[?25h[?25l[47;94H[1K (B[0;7m[ Escribiendo... ](B[m[K[1;125H(B[0;7m [205G(B[m[47;93H(B[0;7m[ 13 líneas escritas ](B[m[48;18H(B[0;7m^O(B[m Guardar[35G(B[0;7m^F(B[m Buscar[48;52H(B[0;7m^K(B[m Cortar        (B[0;7m^T(B[m Ejecutar[86G(B[0;7m^C(B[m Ubicación[105G(B[0;7mU(B[m Deshacer     (B[0;7mM-A(B[m Poner marca  (B[0;7mM-](B[m A llave[48;158HAnterior     (B[0;7m◂(B[m Atrás[48;188H(B[0;7m^◂(B[m Palabra ant.[49;2H(B[0;7mX(B[m Salir   [18G(B[0;7m^R(B[m Leer fich.    (B[0;7m^\(B[m Reemplazar    (B[0;7m^U(B[m Pegar         (B[0;7m^J(B[m Justificar    (B[0;7m^/(B[m Ir a línea[105G(B[0;7mE(B[m Rehacer      (B[0;7mM-6(B[m Copiar[137G(B[0;7m^B(B[m Buscar atrás  (B[0;7mM-F(B[m Siguiente    (B[0;7m▸(B[m Adelante[188G(B[0;7m^▸(B[m Palabra sig.[?12l[?25h[14;5H[?25l[47;88H(B[0;1m[37m[41m[ Para suspender, teclear ^T^Z ][39;49m(B[m[?12l[?25h[14;5H[?25l[47d[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.shc /proyecto/scripts/reporte_sistema.shBuscar[48;52H(B[0;7m^K(B[m Cortar[48;69H(B[0;7m^T(B[m Ejecutar[86G(B[0;7m^C(B[m Ubicación     (B[0;7mM-U(B[m Deshacer     (B[0;7mM-A(B[m Poner marca  (B[0;7mM-](B[m A llave[154G(B[0;7mM-B(B[m Anterior     (B[0;7m◂(B[m Atrás[48;188H(B[0;7m^◂(B[m Palabra ant.[49d(B[0;7m^X(B[m Salir[49;18H(B[0;7m^R(B[m Leer fich.    (B[0;7m^\(B[m Reemplazar    (B[0;7m^U(B[m Pegar[49;69H(B[0;7m^J(B[m Justificar    (B[0;7m^/(B[m Ir a línea    (B[0;7mM-E(B[m Rehacer[120G(B[0;7mM-6(B[m Copiar[137G(B[0;7m^B(B[m Buscar atrás  (B[0;7mM-F(B[m Siguiente    (B[0;7m▸(B[m Adelante[188G(B[0;7m^▸(B[m Palabra sig.[2d[?12l[?25h[?25l[1;125H(B[0;7m*[47d(B[m[K[1;205H[2d[36m#!/bin/bash[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"===== Reporte del sistema ====="[4d[34mecho[39m(B[m (B[0;1m[33m"Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"[5d[34mecho[39m(B[m (B[0;1m[33m"Host:[17X[5;29H$(hostname)"[6d[34mecho[39m(B[m (B[0;1m[33m"Usuarios conectados:  $(who | wc -l)"[7d[34mecho[39m(B[m (B[0;1m[33m"Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"[8d[34mecho[39m(B[m (B[0;1m[33m"RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"[9d(B[0m[32mif[39m(B[m command(B[0;1m[35m -v[39m(B[m docker [32m>[39m(B[m/dev/null 2[32m>&[39m(B[m1[32m;[39m(B[m [32mthen[10;3H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"[11d(B[0m[32melse[12d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Contenedores activos: 0 (Docker no instalado)"[13d(B[0m[32mfi[14d(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[48;18H          [35G         [48;52H(B[0;7mM-D(B[m Formato DOS             [86G            [105G(B[0;7mA(B[m Añadir[35X[48;158HRespaldar fichero[K[49;2H(B[0;7mC(B[m Cancelar[18G[34X[49;52H(B[0;7mM-M(B[m Formato Mac[32X[49;105H(B[0;7mP(B[m Anteponer[14X[49;137H[17X[49;154H(B[0;7m^T(B[m Navegar[K[47d(B[0;7mEscribir al fichero: /proyecto/scripts/reporte_sistema.sh                                                                                                                                                     [47;58H(B[m[?12l[?25h[?25l[47;94H[1K (B[0;7m[ Escribiendo... ](B[m[K[1;125H(B[0;7m [205G(B[m[47;93H(B[0;7m[ 13 líneas escritas ](B[m[48;18H(B[0;7m^O(B[m Guardar[35G(B[0;7m^F(B[m Buscar[48;52H(B[0;7m^K(B[m Cortar        (B[0;7m^T(B[m Ejecutar[86G(B[0;7m^C(B[m Ubicación[105G(B[0;7mU(B[m Deshacer     (B[0;7mM-A(B[m Poner marca  (B[0;7mM-](B[m A llave[48;158HAnterior     (B[0;7m◂(B[m Atrás[48;188H(B[0;7m^◂(B[m Palabra ant.[49;2H(B[0;7mX(B[m Salir   [18G(B[0;7m^R(B[m Leer fich.    (B[0;7m^\(B[m Reemplazar    (B[0;7m^U(B[m Pegar         (B[0;7m^J(B[m Justificar    (B[0;7m^/(B[m Ir a línea[105G(B[0;7mE(B[m Rehacer      (B[0;7mM-6(B[m Copiar[137G(B[0;7m^B(B[m Buscar atrás  (B[0;7mM-F(B[m Siguiente    (B[0;7m▸(B[m Adelante[188G(B[0;7m^▸(B[m Palabra sig.[?12l[?25h[14;5H[?25l[47;88H(B[0;1m[37m[41m[ Para suspender, teclear ^T^Z ][39;49m(B[m[?12l[?25h[14;5H[?25l[47d[J[49d[?12l[?25h[49;1H[?1049l[23;0;0t[?1l>[?2004l]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ nano /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.sh[1P /proyecto/scripts/reporte_sistema.shc /proyecto/scripts/reporte_sistema.sha /proyecto/scripts/reporte_sistema.sht /proyecto/scripts/reporte_sistema.sh
+#!/bin/bash
+echoa /proyecto/scripts/reporte_sistema.sht /proyecto/scripts/reporte_sistema.sh
+#!/bin/bash
+echo "===== Reporte del sistema ====="
+echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"
+echo "Host:                 $(hostname)"
+echo "Usuarios conectados:  $(who | wc -l)"
+echo "Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"
+echo "RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"
+if command -v docker >/dev/null 2>&1; then
+  echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"
+else
+  echo "Contenedores activos: 0 (Docker no instalado)"
+fi
+echo
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ chmod +x /proyecto/scripts/reporte_sistema.sh
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto/scripts/reporte_sistema.sh
+-rwxrwxr-x 1 adminsys adminsys 504 nov  2 23:57 [0m[01;32m/proyecto/scripts/reporte_sistema.sh[0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-02 23:58:20
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.7Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo mkdir -p /var/log/proyecto
+[sudo] contraseña para adminsys: 
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo chown adminsys:adminsys /var/log/proyecto
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -ld /var/log/proyecto
+drwxr-xr-x 2 adminsys adminsys 4096 nov  2 23:59 [0m[01;34m/var/log/proyecto[0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo apt install -y cron
+Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%                                  Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%                                      Leyendo la información de estado... 0%Leyendo la información de estado... 0%                                        cron ya está en su versión más reciente (3.0pl1-197).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo systemctl enable --now cron
+Synchronizing state of cron.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable cron
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ systemctl status cron --no-pager
+[0;1;32m●[0m cron.service - Regular background program processing daemon
+     Loaded: loaded (]8;;file://servidor-grupo3/usr/lib/systemd/system/cron.service\/usr/lib/systemd/system/cron.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Mon 2026-11-02 17:38:37 CST; 6h ago
+ Invocation: 116d8f7ac6c64880b5a905e2da892cb6
+       Docs: ]8;;man:cron(8)\man:cron(8)]8;;\
+   Main PID: 584 (cron)
+      Tasks: 1[0;38:5:245m (limit: 2300)[0m
+     Memory: 444K (peak: 1.9M)
+        CPU: 45ms
+     CGroup: /system.slice/cron.service
+             └─[0;38:5:245m584 /usr/sbin/cron -f[0m
+
+Warning: some journal files were not opened due to insufficient permissions.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (crontab -l 2>/dev/null; echo "*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1") | crontab -crontab -l
+crontab: opción inválida -- 'c'
+crontab: usage error: unrecognized option
+usage:	crontab [-u user] [-n] file
+	crontab [ -u user ] [ -i ] { -e | -l | -r }
+
+	-h	(displays this help message)
+
+	file	(default operation is replace, per 1003.2)
+	-n	(dry run: checks the syntax, then bails out)
+	-u user	(choose the user whose crontab is touched)
+
+	-e	(edit  "===== Reporte del sistema ====="
+echo "Fecha y hora:         $(date '+%Y-%m-%d %H:%M:%S')"
+echo "Host:                 $(hostname)"
+echo "Usuarios conectados:  $(who | wc -l)"
+echo "Espacio libre en /:   $(df -h / | awk 'NR==2 {print $4}')"
+echo "RAM disponible:       $(free -h | awk '/^Mem:/ {print $7}')"
+if command -v docker >/dev/null 2>&1; then
+  echo "Contenedores activos: $(docker ps -q 2>/dev/null | wc -l)"
+else
+  echo "Contenedores activos: 0 (Docker no instalado)"
+fi
+echo
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ chmod +x /proyecto/scripts/reporte_sistema.sh
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /proyecto/scripts/reporte_sistema.sh
+-rwxrwxr-x 1 adminsys adminsys 504 nov  2 23:57 [0m[01;32m/proyecto/scripts/reporte_sistema.sh[0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-02 23:58:20
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.7Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo mkdir -p /var/log/proyecto
+[sudo] contraseña para adminsys: 
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo chown adminsys:adminsys /var/log/proyecto
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -ld /var/log/proyecto
+drwxr-xr-x 2 adminsys adminsys 4096 nov  2 23:59 [0m[01;34m/var/log/proyecto[0m
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo apt install -y cron
+Leyendo lista de paquetes... 0%Leyendo lista de paquetes... 100%                                  Creando árbol de dependencias... 0%Creando árbol de dependencias... 0%Creando árbol de dependencias... 50%Creando árbol de dependencias... 50%                                      Leyendo la información de estado... 0%Leyendo la información de estado... 0%                                        cron ya está en su versión más reciente (3.0pl1-197).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ sudo systemctl enable --now cron
+Synchronizing state of cron.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable cron
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ systemctl status cron --no-pager
+[0;1;32m●[0m cron.service - Regular background program processing daemon
+     Loaded: loaded (]8;;file://servidor-grupo3/usr/lib/systemd/system/cron.service\/usr/lib/systemd/system/cron.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Mon 2026-11-02 17:38:37 CST; 6h ago
+ Invocation: 116d8f7ac6c64880b5a905e2da892cb6
+       Docs: ]8;;man:cron(8)\man:cron(8)]8;;\
+   Main PID: 584 (cron)
+      Tasks: 1[0;38:5:245m (limit: 2300)[0m
+     Memory: 444K (peak: 1.9M)
+        CPU: 45ms
+     CGroup: /system.slice/cron.service
+             └─[0;38:5:245m584 /usr/sbin/cron -f[0m
+
+Warning: some journal files were not opened due to insufficient permissions.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (crontab -l 2>/dev/null; echo "*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1") | crontab -crontab -l
+crontab: opción inválida -- 'c'
+crontab: usage error: unrecognized option
+usage:	crontab [-u user] [-n] file
+	crontab [ -u user ] [ -i ] { -e | -l | -r }
+
+	-h	(displays this help message)
+
+	file	(default operation is replace, per 1003.2)
+	-n	(dry run: checks the syntax, then bails out)
+	-u user	(choose the user whose crontab is touched)
+
+	-e	(edit user's crontab)
+	-l	(list user's crontab)
+	-r	(delete user's crontab)
+
+	-i	(prompt before deleting user's crontab)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.logtail -n 20 /var/log/proyecto/reporte_sistema.log
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ rm -f /var/log/proyecto/reporte_sistema.logtail
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /var/log/proyecto
+total 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (crontab -l 2>/dev/null; echo "*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1") | crontab -
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ crontab -l
+*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 20 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.logsudo journalctl -u cron --since "00:25" --no-pager
+tail: opción inválida -- 'u'
+Pruebe 'tail --help' para más información.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ exit
+exit
+
+Script terminado en 2026-11-03 00:04:14-06:00 [CÓDIGO_SALIDA_ORDEN="0"]
+user's crontab)
+	-l	(list user's crontab)
+	-r	(delete user's crontab)
+
+	-i	(prompt before deleting user's crontab)
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.logtail -n 20 /var/log/proyecto/reporte_sistema.log
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ rm -f /var/log/proyecto/reporte_sistema.logtail
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ ls -l /var/log/proyecto
+total 0
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ (crontab -l 2>/dev/null; echo "*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1") | crontab -
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ crontab -l
+*/30 * * * * /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log 2>&1
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ /proyecto/scripts/reporte_sistema.sh >> /var/log/proyecto/reporte_sistema.log
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 20 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.logsudo journalctl -u cron --since "00:25" --no-pager
+tail: opción inválida -- 'u'
+Pruebe 'tail --help' para más información.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ exit
+exit
+Script finalizado.
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ tail -n 30 /var/log/proyecto/reporte_sistema.log
+===== Reporte del sistema =====
+Fecha y hora:         2026-11-03 00:01:30
+Host:                 servidor-grupo3
+Usuarios conectados:  2
+Espacio libre en /:   17G
+RAM disponible:       1.6Gi
+Contenedores activos: 0 (Docker no instalado)
+
+]0;adminsys@servidor-grupo3: ~adminsys@servidor-grupo3:~$ 
+Script terminado en 2026-11-03 00:05:04-06:00 [CÓDIGO_SALIDA_ORDEN="0"]
